@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Circle</title>
+    <style>
+        #canvas_1 {
+            display: block;
+            margin: auto;
+            padding: 3px;
+            height: 100vh;
+            width: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <canvas id="canvas_1" height="120" width="120"></canvas>
+    </div>
+    <script>
+        var c = document.getElementById('canvas_1');
+        var context = c.getContext('2d');
+        context.beginPath();
+        context.ellipse(50, 50, 50, 17, Math.PI, 0, 2 * Math.PI);
+        context.stroke();
+        var c2 = document.getElementById('canvas_1');
+        var context2 = c2.getContext('2d');
+        context2.beginPath();
+        context2.ellipse(50, 50, 50, 17, 3 * Math.PI / 4, 0, 2 * Math.PI);
+        context2.stroke();
+        var c3 = document.getElementById('canvas_1');
+        var context3 = c3.getContext('2d');
+        context3.beginPath();
+        context3.ellipse(50, 50, 50, 17, Math.PI / 4, 0, 2 * Math.PI);
+        context3.stroke();
+    </script>
+</body>
+
+</html>
