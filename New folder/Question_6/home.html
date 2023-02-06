@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .form-div {
+            display: flex;
+        }
+
+        input {
+            display: block;
+            margin: 10px 5px;
+            /* padding: 20px 10px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-div">
+        <form action="" name="myForm" onsubmit="return checkForm()">
+            <label for="name" name="name">Name: <input type="text" id="name"></label>
+            <label for="password" name="password">Password: <input type="password" id="password"></label>
+            <label for="submit"><input type="submit" value="submit"></label>
+        </form>
+    </div>
+    <script>
+        let timer, currSec = 0;
+        function reset() {
+            clearInterval(timer);
+            currSec = 0;
+            timer = setInterval(startIdleTimer, 1000);
+        }
+
+        window.onload = reset;
+        window.onmousemove = reset;
+        window.onmousedown = reset;
+        window.ontouchstart = reset;
+        window.onclick = reset;
+        window.onkeypress = reset;
+
+        function startIdleTimer() {
+            currSec++;
+            if (currSec == 10) {
+                window.location.href = 'http://localhost:8002/Question_6/logout.html';
+            }
+        }
+    </script>
+</body>
+
+</html>

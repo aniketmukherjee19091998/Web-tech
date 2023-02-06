@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Year & Semester</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <style>
+        ul {
+            list-style: none;
+            font-size: 15px;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-width: 400px;
+            padding: 70px 0;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin: auto;
+            padding: 1.2rem 0 1.2rem 0;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .content {
+            margin: 30px 0;
+        }
+
+        select {
+            width: 100%;
+            display: block;
+            margin: auto;
+            padding: 5px;
+            font-size: 15px;
+            border: 2px soild black;
+            background-color: white;
+            border-radius: 8px;
+            color: black;
+            appearance: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <label for="years">Chosse your year:
+            <select name="years" id="years">
+                <option value="1st" id="1st">1st</option>
+                <option value="2nd" id="2nd">2nd</option>
+                <option value="3rd" id="3rd">3rd</option>
+                <option value="4th" id="4th">4th</option>
+            </select>
+        </label>
+        <label for="semesters">Choose your semester:
+            <select name="semesters" id="semesters">
+                <option value="1st" id="1st">1st</option>
+                <option value="2nd" id="2nd">2nd</option>
+            </select>
+        </label>
+    </div>
+
+    <div class="content">
+        <div class="data" id="1st">
+            <div id="1st-sem">
+                <label for="1Y-1S">
+                    <select name="1Y-1S" id="1Y-1S" style="visibility: hidden;">
+                        <option value="1Y-1S-subject-1" id="1Y-1S-subject-1">Maths</option>
+                        <option value="1Y-1S-subject-2" id="1Y-1S-subject-2">Physics</option>
+                        <option value="1Y-1S-subject-3" id="1Y-1S-subject-3">Chemistry</option>
+                        <option value="1Y-1S-subject-4" id="1Y-1S-subject-4">Engineering Drawing</option>
+                    </select>
+                </label>
+            </div>
+            <div id="1st-2nd">
+                <label for="1Y-2S">
+                    <select name="1Y-2S" id="1Y-2S" style="visibility: hidden;">
+                        <option value="1Y-2S-subject-1" id="1Y-2S-subject-1">Maths-2</option>
+                        <option value="1Y-2S-subject-2" id="1Y-2S-subject-2">Physics-2</option>
+                        <option value="1Y-2S-subject-3" id="1Y-2S-subject-3">Chemistry-2</option>
+                        <option value="1Y-2S-subject-4" id="1Y-2S-subject-4">Economics</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="data" id="2nd">
+            <div id="2nd-1st">
+                <label for="2Y-1S">
+                    <select name="2Y-1S" id="2Y-1S" style="visibility: hidden;">
+                        <option value="2Y-1S-subject-1" id="2Y-1S-subject-1">Maths for IT-I</option>
+                        <option value="2Y-1S-subject-2" id="2Y-1S-subject-2">DSA</option>
+                        <option value="2Y-1S-subject-3" id="2Y-1S-subject-3">OOP</option>
+                        <option value="2Y-1S-subject-4" id="2Y-1S-subject-4">DBMS</option>
+                    </select>
+                </label>
+            </div>
+            <div id="2nd-2nd">
+                <label for="2Y-2S">
+                    <select name="2Y-2S" id="2Y-2S" style="visibility: hidden;">
+                        <option value="2Y-2S-subject-1" id="2Y-2S-subject-1">Maths for IT-II</option>
+                        <option value="2Y-2S-subject-2" id="2Y-2S-subject-2">OOS</option>
+                        <option value="2Y-2S-subject-3" id="2Y-2S-subject-3">Computer Networks</option>
+                        <option value="2Y-2S-subject-4" id="2Y-2S-subject-4">Grpahics</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="data" id="3rd">
+            <div id="3rd-1st">
+                <label for="3Y-1S">
+                    <select name="3Y-1S" id="3Y-1S" style="visibility: hidden;">
+                        <option value="3Y-1S-subject-1" id="3Y-1S-subject-1">OS</option>
+                        <option value="3Y-1S-subject-2" id="3Y-1S-subject-2">Web Tech-I</option>
+                        <option value="3Y-1S-subject-3" id="3Y-1S-subject-3">Cloud Computing</option>
+                        <option value="3Y-1S-subject-4" id="3Y-1S-subject-4">Mobile Networks</option>
+                    </select>
+                </label>
+            </div>
+            <div id="3rd-2nd">
+                <label for="3Y-2S">
+                    <select name="3Y-2S" id="3Y-2S" style="visibility: hidden;">
+                        <option value="3Y-2S-subject-1" id="3Y-2S-subject-1">DAA</option>
+                        <option value="3Y-2S-subject-2" id="3Y-2S-subject-2">Network Security</option>
+                        <option value="3Y-2S-subject-3" id="3Y-2S-subject-3">Web Tech-II</option>
+                        <option value="3Y-2S-subject-4" id="3Y-2S-subject-4">Multimedia</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="data" id="4th">
+            <div id="4th-1st">
+                <label for="4Y-1S">
+                    <select name="4Y-1S" id="4Y-1S" style="visibility: hidden;">
+                        <option value="4Y-1S-subject-1" id="4Y-1S-subject-1">Machine Learing</option>
+                        <option value="4Y-1S-subject-2" id="4Y-1S-subject-2">Data Warehousing</option>
+                        <option value="4Y-1S-subject-3" id="4Y-1S-subject-3">Bio-Informatics</option>
+                        <option value="4Y-1S-subject-4" id="4Y-1S-subject-4">Distributed Computing</option>
+                    </select>
+                </label>
+            </div>
+            <div id="4th-2nd">
+                <label for="4Y-2S">
+                    <select name="4Y-2S" id="4Y-2S" style="visibility: hidden;">
+                        <option value="4Y-2S-subject-1" id="4Y-2Ssubject-1">Data Science</option>
+                        <option value="4Y-2S-subject-2" id="4Y-2Ssubject-2">Management</option>
+                        <option value="4Y-2S-subject-3" id="4Y-2Ssubject-3">Cyber Security</option>
+                        <option value="4Y-2S-subject-4" id="4Y-2Ssubject-4">Pattern Recognition</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+
+</html>

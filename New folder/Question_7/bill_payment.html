@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bill Payment</title>
+    <style>
+        input {
+            padding: 10px;
+            border: 15px;
+            font-size: 15px;
+        }
+
+        button {
+            border: 2px soild black;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 5px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        #date-input {
+            border: 2px soild black;
+            border-radius: 5px;
+            background-color: burlywood;
+        }
+    </style>
+    <script src="./display.js"></script>
+</head>
+
+<body>
+    <form class="container">
+        <h2>Would you like to pay now?</h2>
+        <input id="pay-now" type="radio" name="now-or-later" value="now" onclick="javascript:check()"> Pay now <br>
+        <input id="pay-later" type="radio" name="now-or-later" value="later" onclick="javascript:check()"> Pay later
+        <br>
+        <div id="date" style="visibility:hidden">
+            Payment Date: <input id="date-input" type="text">
+        </div>
+        <button type="submit">Submit Now</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+    <style>
+        .form-div {
+            display: flex;
+        }
+
+        input {
+            display: block;
+            margin: 10px 5px;
+            /* padding: 20px 10px; */
+        }
+    </style>
+    <script type="text/javascript" src="./form.js"></script>
+</head>
+
+<body>
+    <div class="form-div">
+        <form action="" name="myForm" onsubmit="return checkForm()">
+            <label for="name" name="name">Name: <input type="text" id="name"></label>
+            <label for="password" name="password">Password: <input type="password" id="password"></label>
+            <label for="submit"><input type="submit" value="submit"></label>
+        </form>
+    </div>
+</body>
+
+</html>
