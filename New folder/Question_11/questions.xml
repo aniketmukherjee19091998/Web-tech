@@ -1,0 +1,24 @@
+<?xml version = "1.0" ?>
+<!DOCTYPE question-paper SYSTEM "employee.dtd">
+<question-paper>
+    <question no="1">
+        <text>
+            What is the radius of earth in km?
+        </text>
+        <optionA>12800</optionA>
+        <optionB>6371</optionB>
+        <optionC>78356</optionC>
+        <optionD>821730</optionD>
+        <answer value="optionB">6371</answer>
+    </question>
+    <question no="2">
+        <text>
+            What is the radius of moon in km?
+        </text>
+        <optionA>1280</optionA>
+        <optionB>6371</optionB>
+        <optionC>1731</optionC>
+        <optionD>8230</optionD>
+        <answer value="optionC">1731</answer>
+    </question>
+</question-paper>
